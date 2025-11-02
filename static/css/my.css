@@ -1,0 +1,54 @@
+  /* 全体コンテナ */
+  .video-grid-container {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  /* 全体のテキスト（動画群の上部に表示） */
+  .grid-text {
+      text-align: left;
+      font-weight: bold;
+      padding: 10px 0;
+      font-size: 20px;
+      margin-left: -10px;
+      color: #333333;
+  }
+
+  /* 各行のコンテナ */
+  .video-row {
+      margin-bottom: 30px;
+  }
+
+  /* 各行のテキスト（行の上部に表示） */
+  .row-text {
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      /* margin-left: -10px; */
+      color: #333333;
+  }
+
+  /* 動画を横並びにするためのラッパー */
+  .row-videos {
+      display: flex;
+      gap: 20px;
+  }
+
+  /* 各動画要素のコンテナ */
+  .video-item {
+      flex: 1;
+  }
+
+  .video-item video {
+      width: 100%;
+      display: block;
+  }
+
+  /* 各動画のテキスト（動画の下部に表示） */
+  .element-text {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+      color: #231816;
+  }

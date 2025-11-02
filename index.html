@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Enhancing Reusability of Learned Skills for Robot Manipulation via Gaze and Bottleneck</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/static/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/my.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Enhancing Reusability of Learned Skills for Robot
+                            Manipulation via Gaze and Bottleneck</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://crumbyrobotics.github.io/" target="_blank">Ryo
+                                    Takizawa</a><sup>*</sup>,
+                            </span>
+                            <span class="author-block">
+                                Izumi Karino,
+                            </span>
+                            <span class="author-block">
+                                Koki Nakagawa,
+                            </span>
+                            <span class="author-block">
+                                Yoshiyuki Ohmura,
+                            </span>
+                            <span class="author-block">
+                                Yasuo Kuniyoshi</a>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">The University of Tokyo<!--<br>RSS 2025--></span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2502.18121.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/crumbyRobotics/gazebot" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2502.18121" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaser video-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/banner_video.mp4" type="video/mp4">
+                </video> -->
+                <img src="static/images/overview.jpg" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered">
+                    <strong>GazeBot</strong> achieves high reusability of learned skills for unseen object positions and
+                    end-effector poses. Demonstrations collected within restricted ranges of object
+                    positions and end-effector
+                    poses, and then the success rate is evaluated for in-distribution (<strong>ID</strong>) cases within
+                    these ranges and out-of-distribution (<strong>OOD</strong>) cases outside them.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Autonomous agents capable of diverse object manipulations should be able to acquire a wide
+                            range of manipulation skills with high reusability. Although advances in deep
+                            learning have made it
+                            increasingly feasible to replicate the dexterity of human teleoperation in robots,
+                            generalizing these acquired skills to previously unseen scenarios remains a significant
+                            challenge.
+                            In this study, we propose a novel algorithm, Gaze-based Bottleneck-aware Robot Manipulation
+                            (<strong>GazeBot</strong>), which enables high reusability of the learned
+                            motions even when the object positions and
+                            end-effector poses differ from those in the provided demonstrations. By leveraging gaze
+                            information and motion bottlenecks—both crucial features for object
+                            manipulation—GazeBot achieves high
+                            generalization performance compared with state-of-the-art imitation learning methods,
+                            without sacrificing its dexterity and reactivity. Furthermore, the training process of
+                            GazeBot is entirely
+                            data-driven once a demonstration dataset with gaze data is provided.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Gaze-based Visual Representation</h2>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/gaze-based-vision.jpg" alt="MY ALT TEXT" width="600"
+                        style="display: block; margin: auto;" />
+                    <h2 class="subtitle has-text-justified">
+                        Although both the left and right scenes represent a similar state, their positions on the table
+                        differ. In conventional gaze-centered image (a), which lacks 3D-awareness, the
+                        scenes appear substantially different, whereas in our proposed <strong>gaze-centered point
+                            cloud</strong> (b), their underlying three-dimensional structure is captured as
+                        similar.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Bottleneck-aware Action Segmentation</h2>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/bottleneck.jpg" alt="MY ALT TEXT" width="600"
+                        style="display: block; margin: auto;" />
+                    <h2 class="subtitle has-text-justified">
+                        By observing object manipulation in gaze-centered point cloud, an action can be automatically
+                        segmented into two phases at the <strong>bottleneck</strong>: (1) the reaching
+                        motion and (2) the gaze-centered dexterous action. The motion after the bottleneck is reusable
+                        irrespective of the object position and the initial end-effector pose.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Model Architecture</h2>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/model-architecture.jpg" alt="MY ALT TEXT" />
+                    <h2 class="subtitle has-text-justified">
+                        GazeBot architecture. (left) The gaze prediction model is trained to estimate the gaze position
+                        across the entire image as a classification problem. (right) The action policy
+                        model achieves robust reaching motion by estimating the bottleneck pose and the shape of the
+                        trajectory up to the bottleneck, and uses a Transformer to predict the
+                        gaze-centered dexterous action in a full-parametric manner. Both actions and gaze transitions
+                        are predicted by the gaze-centered point cloud to improve the reusability.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Experiments</h2>
+                <h3 class="title is-4">Evaluation Setup (ID and OOD)</h3>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/eval-generalization.jpg" alt="MY ALT TEXT" />
+                    <h2 class="subtitle">
+                        Examples of <strong>ID</strong> and <strong>OOD</strong> trials in the PenInCup, OpenCap, and
+                        PileBox tasks, where object positions and the initial end-effector poses are
+                        controlled. The
+                        images show the initial
+                        states of each trial. The checkboxes correspond to the method order in the table below and
+                        indicate whether each method succeeded in the task from that
+                        initial state.
+                    </h2>
+                </div>
+
+                <br>
+
+                <h3 class="title is-4">Rollouts</h3>
+                <div class="video-grid-container">
+                    <!-- 全体のテキスト -->
+                    <div class="grid-text">PenInCup Task</div>
+
+                    <!-- 1行目 -->
+                    <div class="video-row">
+                        <div class="row-text">ID trials</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_ID_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot (Ours)</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_ID_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT [Zhao et al. 2023]</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2行目 -->
+                    <div class="video-row">
+                        <div class="row-text">OOD trials (unseen object positions)</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_OOD_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_OOD_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3行目 -->
+                    <div class="video-row">
+                        <div class="row-text">OOD trials (unseen initial poses)</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_OOD2_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/PenInCup_OOD2_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-grid-container">
+                    <!-- 全体のテキスト -->
+                    <div class="grid-text">OpenCap Task</div>
+
+                    <!-- 1行目 -->
+                    <div class="video-row">
+                        <div class="row-text">ID trials</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_ID_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_ID_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2行目 -->
+                    <div class="video-row">
+                        <div class="row-text">OOD trials (unseen object positions)</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_OOD_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_OOD_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3行目 -->
+                    <div class="video-row">
+                        <div class="row-text">OOD trials (unseen initial poses)</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_OOD2_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/OpenCap_OOD2_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <h3 class="title is-4">Results</h3>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/result-table.png" alt="MY ALT TEXT" />
+                    <h2 class="subtitle">
+                        Comparison of success rates (%) for ID and OOD trials in PenInCup, OpenCap and PileBox tasks.
+                        Our method is compared with seven ablation models, two of which are conventional
+                        baselines. We conducted
+                        12 trials for PenInCup and OpenCap, and 20 trials for PileBox. Notably, only the proposed method
+                        maintains a high success rate in OOD situations for both tasks.
+                    </h2>
+                </div>
+
+                <br>
+
+                <h3 class="title is-4">Reactiveness of GazeBot</h3>
+                <div class="item">
+                    <!-- Your image here -->
+                    <video src="static/videos/GazeBot_reactiveness.mp4" controls muted loop
+                        style="display: block; margin: auto;"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{Takizawa2025,
+    title={Enhancing Reusability of Learned Skills for Robot Manipulation via Gaze and Bottleneck},
+    author={Ryo Takizawa and Izumi Karino and Koki Nakagawa and Yoshiyuki Ohmura and Yasuo Kuniyoshi},
+    journal={ArXiv},
+    year={2025},
+    volume={2502.18121},
+}
+</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted
+                            from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
