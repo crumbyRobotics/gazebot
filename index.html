@@ -54,7 +54,7 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title">Enhancing Reusability of Learned Skills for Robot
-                            Manipulation via Gaze and Bottleneck</h1>
+                            Manipulation via Gaze Information and Motion Bottlenecks</h1>
                         <div class="is-size-5 publication-authors">
                             <!-- Paper authors -->
                             <span class="author-block">
@@ -76,16 +76,16 @@
                         </div>
 
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block">The University of Tokyo<!--<br>RSS 2025--></span>
+                            <span class="author-block">The University of Tokyo</span>
                             <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
+                            <span><br>IEEE Robotics and Automation Letters (RA-L) 2025</small></span>
                         </div>
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- Arxiv PDF link -->
                                 <span class="link-block">
-                                    <a href="https://arxiv.org/pdf/2502.18121.pdf" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://arxiv.org/pdf/2502.18121.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
                                         </span>
@@ -95,8 +95,7 @@
 
                                 <!-- Github link -->
                                 <span class="link-block">
-                                    <a href="https://github.com/crumbyRobotics/gazebot" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://github.com/crumbyRobotics/gazebot" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
@@ -106,8 +105,7 @@
 
                                 <!-- ArXiv abstract Link -->
                                 <span class="link-block">
-                                    <a href="https://arxiv.org/abs/2502.18121" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://arxiv.org/abs/2502.18121" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
                                         </span>
@@ -133,7 +131,7 @@
                 <img src="static/images/overview.jpg" alt="MY ALT TEXT" />
                 <h2 class="subtitle has-text-centered">
                     <strong>GazeBot</strong> achieves high reusability of learned skills for unseen object positions and
-                    end-effector poses. Demonstrations collected within restricted ranges of object
+                    end-effector poses without sacrificing dexterity or reactivity. Demonstrations collected within restricted ranges of object
                     positions and end-effector
                     poses, and then the success rate is evaluated for in-distribution (<strong>ID</strong>) cases within
                     these ranges and out-of-distribution (<strong>OOD</strong>) cases outside them.
@@ -157,16 +155,12 @@
                             increasingly feasible to replicate the dexterity of human teleoperation in robots,
                             generalizing these acquired skills to previously unseen scenarios remains a significant
                             challenge.
-                            In this study, we propose a novel algorithm, Gaze-based Bottleneck-aware Robot Manipulation
-                            (<strong>GazeBot</strong>), which enables high reusability of the learned
-                            motions even when the object positions and
-                            end-effector poses differ from those in the provided demonstrations. By leveraging gaze
-                            information and motion bottlenecks—both crucial features for object
-                            manipulation—GazeBot achieves high
-                            generalization performance compared with state-of-the-art imitation learning methods,
-                            without sacrificing its dexterity and reactivity. Furthermore, the training process of
-                            GazeBot is entirely
-                            data-driven once a demonstration dataset with gaze data is provided.
+                            In this study, we propose a novel algorithm, Gaze-based Bottleneck-aware Robot Manipulation (<strong>GazeBot</strong>),
+                            which enables high reusability of learned motions without sacrificing dexterity or reactivity. By
+                            leveraging gaze information and motion bottlenecks—both crucial features for object manipulation—GazeBot achieves
+                            high success rates compared with state-of-the-art imitation learning methods,
+                            particularly when the object positions and end-effector poses differ from those in the provided demonstrations.
+                            Furthermore, the training process of GazeBot is entirely data-driven once a demonstration dataset with gaze data is provided.
                         </p>
                     </div>
                 </div>
@@ -182,8 +176,7 @@
                 <h2 class="title">Gaze-based Visual Representation</h2>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/gaze-based-vision.jpg" alt="MY ALT TEXT" width="600"
-                        style="display: block; margin: auto;" />
+                    <img src="static/images/gaze-based-vision.jpg" alt="MY ALT TEXT" width="600" style="display: block; margin: auto;" />
                     <h2 class="subtitle has-text-justified">
                         Although both the left and right scenes represent a similar state, their positions on the table
                         differ. In conventional gaze-centered image (a), which lacks 3D-awareness, the
@@ -204,8 +197,7 @@
                 <h2 class="title">Bottleneck-aware Action Segmentation</h2>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/bottleneck.jpg" alt="MY ALT TEXT" width="600"
-                        style="display: block; margin: auto;" />
+                    <img src="static/images/bottleneck.jpg" alt="MY ALT TEXT" width="600" style="display: block; margin: auto;" />
                     <h2 class="subtitle has-text-justified">
                         By observing object manipulation in gaze-centered point cloud, an action can be automatically
                         segmented into two phases at the <strong>bottleneck</strong>: (1) the reaching
@@ -231,7 +223,7 @@
                         across the entire image as a classification problem. (right) The action policy
                         model achieves robust reaching motion by estimating the bottleneck pose and the shape of the
                         trajectory up to the bottleneck, and uses a Transformer to predict the
-                        gaze-centered dexterous action in a full-parametric manner. Both actions and gaze transitions
+                        gaze-centered action in a full-parametric manner. Both actions and gaze transitions
                         are predicted by the gaze-centered point cloud to improve the reusability.
                     </h2>
                 </div>
@@ -245,7 +237,7 @@
         <div class="hero-body">
             <div class="container">
                 <h2 class="title">Experiments</h2>
-                <h3 class="title is-4">Evaluation Setup (ID and OOD)</h3>
+                <h3 class="title is-4">Evaluation of Reusability (ID and OOD)</h3>
                 <div class="item">
                     <!-- Your image here -->
                     <img src="static/images/eval-generalization.jpg" alt="MY ALT TEXT" />
@@ -366,7 +358,6 @@
 
                 <br>
 
-                <h3 class="title is-4">Results</h3>
                 <div class="item">
                     <!-- Your image here -->
                     <img src="static/images/result-table.png" alt="MY ALT TEXT" />
@@ -381,11 +372,112 @@
 
                 <br>
 
+                <h3 class="title is-4">Evaluation of Applicability (More Complex and Realistic Tasks)</h3>
+                <div class="video-grid-container">
+                    <!-- 全体のテキスト -->
+                    <div class="grid-text">WipeTray Task</div>
+
+                    <!-- 1行目 -->
+                    <div class="video-row">
+                        <div class="row-text">Success</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/Wipe_Gaze.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/Wipe_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2行目 -->
+                    <div class="video-row">
+                        <div class="row-text">Typical Failure (for both models)</div>
+                        <div>
+                            <video src="static/videos/Wipe_Gaze_Fail.mp4" controls muted loop width="420"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-grid-container">
+                    <!-- 全体のテキスト -->
+                    <div class="grid-text">BaggingGoods Task</div>
+
+                    <!-- 1行目 -->
+                    <div class="video-row">
+                        <div class="row-text">Success</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/BaggingGoods_GazeBot.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/BaggingGoods_ACT.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2行目 -->
+                    <div class="video-row">
+                        <div class="row-text">Typical Failure</div>
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/BaggingGoods_GazeBot_fail.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>GazeBot</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/BaggingGoods_ACT_fail.mp4" controls muted loop></video>
+                                <div class="element-text">ACT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-grid-container">
+                    <div class="grid-text">Gaze Visualization</div>
+                    <div class="video-row">
+                        <div class="row-videos">
+                            <div class="video-item">
+                                <video src="static/videos/gaze_wipe.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>WipeTray</strong></div>
+                            </div>
+                            <div class="video-item">
+                                <video src="static/videos/gaze_bagging.mp4" controls muted loop></video>
+                                <div class="element-text"><strong>BaggingGoods</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/result-table2.png" alt="MY ALT TEXT" width="800" style="display: block; margin: auto;" />
+                    <h2 class="subtitle">
+                        Comparison of success rates (%) in WipeTray and BaggingGoods tasks.
+                        GazeBot successfully learned both tasks, similar to ACT. Moreover, it clearly outperformed ACT in BaggingGoods,
+                        likely because this task involves many objects and large variations in their configurations.
+                    </h2>
+                </div>
+
+
+                <br><br>
+
+                <h2 class="title">Other Properties</h2>
+                <h3 class="title is-4">Robustness of Gaze Prediction</h3>
+                <div class="item">
+                    <!-- Your image here -->
+                    <video src="static/videos/Robust_gaze.mp4" controls muted loop style="display: block; margin: auto;" width="600"></video>
+                </div>
+                <br>
                 <h3 class="title is-4">Reactiveness of GazeBot</h3>
                 <div class="item">
                     <!-- Your image here -->
-                    <video src="static/videos/GazeBot_reactiveness.mp4" controls muted loop
-                        style="display: block; margin: auto;"></video>
+                    <video src="static/videos/gaze_reactive.mp4" controls muted loop style="display: block; margin: auto;" width="600"></video>
                 </div>
             </div>
         </div>
@@ -399,11 +491,10 @@
         <div class="container">
             <h2 class="title">BibTeX</h2>
             <pre><code>@article{Takizawa2025,
-    title={Enhancing Reusability of Learned Skills for Robot Manipulation via Gaze and Bottleneck},
+    title={Enhancing Reusability of Learned Skills for Robot Manipulation via Gaze Information and Motion Bottlenecks},
     author={Ryo Takizawa and Izumi Karino and Koki Nakagawa and Yoshiyuki Ohmura and Yasuo Kuniyoshi},
-    journal={ArXiv},
+    journal={IEEE Robotics and Automation Letters},
     year={2025},
-    volume={2502.18121},
 }
 </code></pre>
         </div>
@@ -417,9 +508,7 @@
                 <div class="column is-8">
                     <div class="content">
                         <p>
-                            This page was built using the <a
-                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                                target="_blank">Academic Project Page Template</a> which was adopted
+                            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted
                             from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
                         </p>
                     </div>
